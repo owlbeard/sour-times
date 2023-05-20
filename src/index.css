@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+body {
+  background: #2d2d2d;
+  color: white;
+}
+
+#icon {
+  filter: invert(72%) sepia(37%) saturate(644%) hue-rotate(48deg)
+    brightness(90%) contrast(88%);
+}
+
+#pena,
+#magnify {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
+}
+
+#sour {
+  filter: invert(83%) sepia(16%) saturate(1233%) hue-rotate(115deg)
+    brightness(97%) contrast(92%);
+}
+
+#light {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
+}
+
+#headings::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+#headings::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+#headings::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #202020;
+}
+
+#sourText {
+  filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(164deg) brightness(94%)
+    contrast(85%);
+}
