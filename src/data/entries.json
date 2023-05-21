@@ -2,9 +2,10 @@
   {
     "heading": "sourtimes",
     "entry_no": 1,
-    "date": "19.07.1996",
+    "date": "19.07.1996 06:50",
     "writer": "dev_sharp",
     "entry": "a famous piece of portishead.",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -12,19 +13,69 @@
   {
     "heading": "pena",
     "entry_no": 2,
-    "date": "19.07.1996",
+    "date": "19.08.1996 00:08",
     "writer": "ssg",
     "entry": "tiny plastic strange object used to play the guitar.",
+    "links": "",
     "fav": 14400,
     "likes": 128957
   },
 
   {
+    "heading": "how to relate",
+    "entry_no": 3,
+    "date": "19.09.1996 01:32",
+    "writer": "hijab_hottie",
+    "entry": "you need to make the person in front of you feel that you are listening to him/her wholeheartedly.",
+    "links": "",
+    "fav": 231,
+    "likes": 4869
+  },
+
+  {
+    "heading": "government for and by the people",
+    "entry_no": "4",
+    "date": "28.05.2023 23:59",
+    "writer": "dev_sharp",
+    "entry": "",
+    "links": {
+      "type": "see",
+      "linkText": "404 not found",
+      "url": "https://tr.wikipedia.org/wiki/HTTP_404"
+    },
+    "fav": 16874,
+    "likes": 122869
+  },
+
+  {
+    "heading": "funny dialogues with children",
+    "entry_no": "4",
+    "date": "28.05.2023 23:59",
+    "writer": "sandbox",
+    "entry": "- i haven't eaten ice cream for years\n\n\nmy 3 year old nephew's reaction to the ice cream i bought him.",
+    "links": "",
+    "fav": 874,
+    "likes": 22869
+  },
+
+  {
+    "heading": "government for and by the people",
+    "entry_no": "4",
+    "date": "14.01.2023 19:49",
+    "writer": "granny",
+    "entry": "if you want a life-long marriage like mine, it is essential to know how to meet in the middle in discussions and have mutual respect.",
+    "links": "",
+    "fav": 1004,
+    "likes": 10467
+  },
+
+  {
     "heading": "",
     "entry_no": "",
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -35,6 +86,7 @@
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -45,6 +97,7 @@
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -55,6 +108,7 @@
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -65,6 +119,7 @@
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -75,6 +130,7 @@
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -85,6 +141,7 @@
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -95,6 +152,7 @@
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -105,6 +163,7 @@
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -115,6 +174,7 @@
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -125,6 +185,7 @@
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -135,6 +196,7 @@
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -145,6 +207,7 @@
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   },
@@ -155,46 +218,7 @@
     "date": "19.07.1996",
     "writer": "",
     "entry": "",
-    "fav": 101,
-    "likes": 2869
-  },
-
-  {
-    "heading": "",
-    "entry_no": "",
-    "date": "19.07.1996",
-    "writer": "",
-    "entry": "",
-    "fav": 101,
-    "likes": 2869
-  },
-
-  {
-    "heading": "",
-    "entry_no": "",
-    "date": "19.07.1996",
-    "writer": "",
-    "entry": "",
-    "fav": 101,
-    "likes": 2869
-  },
-
-  {
-    "heading": "",
-    "entry_no": "",
-    "date": "19.07.1996",
-    "writer": "",
-    "entry": "",
-    "fav": 101,
-    "likes": 2869
-  },
-
-  {
-    "heading": "",
-    "entry_no": "",
-    "date": "19.07.1996",
-    "writer": "",
-    "entry": "",
+    "links": "",
     "fav": 101,
     "likes": 2869
   }

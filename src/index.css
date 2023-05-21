@@ -26,8 +26,8 @@ body {
 }
 
 #sour {
-  filter: invert(83%) sepia(16%) saturate(1233%) hue-rotate(115deg)
-    brightness(97%) contrast(92%);
+  filter: invert(71%) sepia(57%) saturate(433%) hue-rotate(145deg)
+    brightness(93%) contrast(89%);
 }
 
 #light {

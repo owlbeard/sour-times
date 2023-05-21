@@ -1,65 +1,62 @@
 import React, { useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Context, useContext } from '../context/Context';
 import Icon from '../assets/water.svg';
 
 export default function Navbar() {
-  const location = useLocation();
-
+  const { panel, setPanel } = useContext(Context);
+  const change = (e) => {
+    setPanel(e.target.textContent.replace(/#/g, ''));
+  };
   useEffect(() => {
     for (const a of document.querySelectorAll('a')) {
-      let locText = location.pathname.replace(/[/]/g, '');
-      if (a.textContent.includes(locText) && locText !== '') {
-        let border = document.querySelector('.border-b-4');
-        if (border) border.classList.remove('border-b-4');
-        a.classList.add('border-b-4');
-      } else if (locText === '' && a.textContent.includes('hot')) {
+      if (a.textContent.includes(panel)) {
         let border = document.querySelector('.border-b-4');
         if (border) border.classList.remove('border-b-4');
         a.classList.add('border-b-4');
       }
     }
-  }, [location]);
+  }, [panel]);
 
   return (
     <div className="text-sourText text-xs font-semibold flex justify-between gap-4">
-      <ul className="flex justify-between pt-2 gap-4 flex-grow">
-        <Link
-          to="/"
+      <div className="flex justify-between pt-2 gap-4 flex-grow">
+        <button
           className="hover:border-b-4 active:border-b-4 border-b-sour px-8 pb-2"
+          onClick={change}
         >
-          <li>hot</li>
-        </Link>
-        <Link
-          to="/top"
+          hot
+        </button>
+        <button
           className="hover:border-b-4 active:border-b-4 border-b-sour px-8"
+          onClick={change}
         >
-          <li>top</li>
-        </Link>
-        <Link
-          to="/problematics"
+          top
+        </button>
+        <button
           className="hover:border-b-4 active:border-b-4 border-b-sour px-8"
+          onClick={change}
         >
-          <li>problematics</li>
-        </Link>
-        <Link
-          to="/sports"
+          problematics
+        </button>
+        <button
           className="hover:border-b-4 active:border-b-4 border-b-sour px-8"
+          onClick={change}
         >
-          <li>#sports</li>
-        </Link>
-        <Link
-          to="/relationships"
+          #sports
+        </button>
+        <button
           className="hover:border-b-4 active:border-b-4 border-b-sour px-8"
+          onClick={change}
         >
-          <li>#relationships</li>
-        </Link>
-        <Link
-          to="/politics"
+          #relationships
+        </button>
+        <button
           className="hover:border-b-4 active:border-b-4 border-b-sour px-8"
+          onClick={change}
         >
-          <li>#politics</li>
-        </Link>
-      </ul>
+          #politics
+        </button>
+      </div>
       <ul className="flex gap-5 items-center">
         <li className="flex gap-1 items-center pb-2">
           <div className="bg-red-600 rounded-full w-6 h-6">

@@ -26,12 +26,24 @@ export default function Random() {
           return user.name === entry.writer;
         });
         if (pp !== undefined) pp = pp.pp;
-        return entry.entry !== '' ? (
-          <div className="pl-6 pt-8" key={uniqid()}>
+        return entry.entry !== '' || entry.links !== '' ? (
+          <div className="pt-8" key={uniqid()}>
             <h1 className="text-xl text-sourText font-bold mb-4">
               {entry.heading}
             </h1>
-            <p className="text-sourText text-sm mb-2">{entry.entry}</p>
+            <div className="text-sourText text-sm mb-2 whitespace-pre-wrap">
+              {entry.entry}
+              {entry.links ? (
+                <p>
+                  ({entry.links.type}:
+                  <a
+                    href={entry.links.url}
+                    className="text-sourLink"
+                  >{`  ${entry.links.linkText}`}</a>
+                  )
+                </p>
+              ) : null}
+            </div>
             <div className="flex justify-between">
               <span className="flex items-center gap-4">
                 <button
@@ -56,17 +68,19 @@ export default function Random() {
                     alt="down arrow"
                   />
                 </button>
-                <button aria-label="Add to favorites!">
-                  <img
-                    id="sourText"
-                    className="h-5"
-                    src={IconEmpty}
-                    alt="sourtimes"
-                    onMouseEnter={paint}
-                    onMouseLeave={undoPaint}
-                  />
-                </button>
-                <button className="text-sm text-sourText">{entry.fav}</button>
+                <div className="flex item-center">
+                  <button aria-label="Add to favorites!">
+                    <img
+                      id="sourText"
+                      className="h-5"
+                      src={IconEmpty}
+                      alt="sourtimes"
+                      onMouseEnter={paint}
+                      onMouseLeave={undoPaint}
+                    />
+                  </button>
+                  <button className="text-sm text-sourText">{entry.fav}</button>
+                </div>
               </span>
               <span className="flex items-center gap-1">
                 <button aria-label="Share">
@@ -76,11 +90,17 @@ export default function Random() {
               </span>
             </div>
             <div className="flex justify-end item-center gap-2 mt-2">
-              <div className="flex flex-col justify-end">
-                <p className="text-right text-sour">{entry.writer}</p>
-                <p>{entry.date}</p>
+              <div className="flex flex-col justify-center items-end">
+                <p className="text-right text-xs text-sourLink">
+                  {entry.writer}
+                </p>
+                <p className="text-sourMute text-xs">{entry.date}</p>
               </div>
-              <img className="h-10 w-10 rounded-full" src={pp} alt="profile" />
+              <img
+                className="h-10 w-10 rounded-full object-cover"
+                src={pp}
+                alt="profile"
+              />
             </div>
           </div>
         ) : null;
