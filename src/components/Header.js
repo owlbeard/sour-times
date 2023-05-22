@@ -44,13 +44,9 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="flex gap-6 items-center">
-          <button id="login" className="text-gray-400">
-            login
-          </button>
-          <button id="register" className="text-gray-400">
-            register
-          </button>
+        <div className="flex gap-6 items-center text-sourText text-xs">
+          <button id="login">login</button>
+          <button id="register">register</button>
         </div>
       </div>
       <Navbar />
