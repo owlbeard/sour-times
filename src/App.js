@@ -5,6 +5,8 @@ import SourThings from './components/SourThings';
 import { Context } from './context/Context';
 import { useState } from 'react';
 import LeftPanel from './components/LeftPanel';
+import Top from './components/Top';
+import Problematics from './components/Problematics';
 
 function App() {
   const [panel, setPanel] = useState('hot');
@@ -23,7 +25,13 @@ function App() {
             id="headings"
             className="2xl:pl-80 xl:pl-40 lg:pl-20 md:pl-10 pt-8 fixed top-28 max-sm:hidden flex flex-col gap-6 overflow-auto pr-2 h-sourLeftHeight"
           >
-            <LeftPanel channel={panel} />
+            {panel === 'top' ? (
+              <Top />
+            ) : panel === 'problematics' ? (
+              <Problematics />
+            ) : (
+              <LeftPanel channel={panel} />
+            )}
           </div>
           <div className="mt-28 ml-sourLeft max-w-2xl">
             <Random />

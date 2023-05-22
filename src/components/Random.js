@@ -7,8 +7,11 @@ import IconEmpty from '../assets/water-outline.svg';
 import Icon from '../assets/water.svg';
 import Share from '../assets/share.svg';
 import uniqid from 'uniqid';
+import randomize from '../utilities/randomize';
 
 export default function Random() {
+  let randomEntries = randomize(Entries);
+
   const paint = function (e) {
     let target = e.target;
     target.setAttribute('src', `${Icon}`);
@@ -21,12 +24,12 @@ export default function Random() {
   };
   return (
     <div>
-      {Entries.map((entry) => {
+      {randomEntries.map((entry) => {
         let pp = User.find((user) => {
           return user.name === entry.writer;
         });
         if (pp !== undefined) pp = pp.pp;
-        return entry.entry !== '' || entry.links !== '' ? (
+        return (
           <div className="pt-8" key={uniqid()}>
             <h1 className="text-xl text-sourText font-bold mb-4">
               {entry.heading}
@@ -103,7 +106,7 @@ export default function Random() {
               />
             </div>
           </div>
-        ) : null;
+        );
       })}
     </div>
   );

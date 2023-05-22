@@ -7,14 +7,12 @@ export default function LeftPanel({ channel }) {
   return (
     <>
       <div>
-        <h1 className="text-sourMute text-xl pb-3">{channel}</h1>
+        <h1 className="text-sourMute text-xl">{channel}</h1>
       </div>
       {Headings.map((heading) => {
-        console.log(heading.channel);
-        console.log(channel);
         return channel === 'hot' && heading.hot === true ? (
           <Link to={'/' + heading.name} key={uniqid()}>
-            <div className="flex justify-between items-center gap-3">
+            <div className="flex justify-between items-center gap-3 w-60">
               <h3 className="text-sm w-48 text-sourText">{heading.name}</h3>
               <p className="text-sm text-sourMute">{heading.entryCount}</p>
             </div>

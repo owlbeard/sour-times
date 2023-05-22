@@ -21,7 +21,7 @@ export default function Navbar() {
     <div className="text-sourText text-xs font-semibold flex justify-between gap-4">
       <div className="flex justify-between pt-2 gap-4 flex-grow">
         <button
-          className="hover:border-b-4 active:border-b-4 border-b-sour px-8 pb-2"
+          className="hover:border-b-4 active:border-b-4 border-b-sour px-8"
           onClick={change}
         >
           hot
@@ -39,7 +39,7 @@ export default function Navbar() {
           problematics
         </button>
         <button
-          className="hover:border-b-4 active:border-b-4 border-b-sour px-8"
+          className="hover:border-b-4 active:border-b-4 border-b-sour px-8 "
           onClick={change}
         >
           #sports
