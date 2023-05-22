@@ -9,9 +9,9 @@ import Share from '../assets/share.svg';
 import uniqid from 'uniqid';
 import randomize from '../utilities/randomize';
 
-export default function Random() {
-  let randomEntries = randomize(Entries);
+let randomEntries = randomize(Entries);
 
+export default function Random() {
   const paint = function (e) {
     let target = e.target;
     target.setAttribute('src', `${Icon}`);

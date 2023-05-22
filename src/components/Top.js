@@ -4,10 +4,8 @@ import { Link } from 'react-router-dom';
 import uniqid from 'uniqid';
 import Icon from '../assets/water.svg';
 
-const sortedEntries = Entries.sort((a, b) => b.fav - a.fav);
-console.log(sortedEntries);
-
 export default function Top() {
+  const sortedEntries = Entries.sort((a, b) => b.fav - a.fav);
   return (
     <>
       <div>
